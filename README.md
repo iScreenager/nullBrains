@@ -49,7 +49,7 @@ To get started with the project locally, follow these steps:
    yarn dev
    ```
 
-```
+
 
 
 
