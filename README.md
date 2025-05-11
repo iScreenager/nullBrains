@@ -51,7 +51,7 @@ To get started with the project locally, follow these steps:
 
 ## 🌐 Live Demo
 
-You can check out the live demo of the project here: [Live Demo]([https://null-brains-git-master-iscreenagers-projects.vercel.app/](https://null-brains.vercel.app/))
+You can check out the live demo of the project here: [Live Demo](https://null-brains-git-master-iscreenagers-projects.vercel.app/)
 
 
 
