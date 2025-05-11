@@ -1,0 +1,13 @@
+/* Base styles set globally via :root */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333; /* Universal text color */
+  box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+  -webkit-font-smoothing: antialiased; /* For better font rendering in Webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* For better font rendering in Firefox on macOS */
+}
+body{
+  margin: 0;
+}
+

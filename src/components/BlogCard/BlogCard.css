@@ -1,0 +1,103 @@
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 350px;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease-in-out,
+    border-radius 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: scale(1.05);
+  border-radius: 16px;
+}
+
+.blog-card.minione {
+  flex: 1;
+  border: 0.5px solid #bebebe;
+  border-radius: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card-header {
+  position: relative;
+}
+
+.blogCard-img {
+  width: 100%;
+  display: block;
+}
+
+.blogCard-label {
+  position: absolute;
+  bottom: -12px;
+  left: 20px;
+  padding: 4px 14px;
+  font-size: 0.75rem;
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.blogCard-content {
+  width: 100%;
+  text-align: start;
+  background: #555;
+  color: #fff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.blogCard-content h2 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.blogCard-content.minione h2 {
+  font-size: 1rem;
+  color: black;
+}
+.blog-card.minione span {
+  color: gray;
+}
+
+.blogCard-content span {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 900px) {
+  .blogCard-content h2 {
+    font-size: 2rem;
+  }
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .blog-card {
+    width: 280px;
+  }
+  .blogCard-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .blogCard-content span {
+    font-size: 0.9rem;
+  }
+
+  .blogCard-label {
+    font-size: 0.65rem;
+  }
+}

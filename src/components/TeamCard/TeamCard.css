@@ -1,0 +1,46 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.avatar-wrapper {
+  width: 200px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding: 15px;
+}
+.avatar-wrapper img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.member-name {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.member-role {
+  color: #5a89d6;
+   font-size: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  color: rgb(215, 212, 212);
+  font-size: 1.1rem;
+}

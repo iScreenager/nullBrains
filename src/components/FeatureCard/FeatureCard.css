@@ -1,0 +1,46 @@
+.featureCard {
+  width: 230px;
+  background-color: #f3f4f6;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.featureCard .icon {
+  background-color: #4386f2;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureCard .title {
+  font-size: 1.1rem;
+  color: #4b5563;
+  font-weight: 400;
+}
+
+.featureCard .description {
+  font-size: 0.7rem;
+  color: gray;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 900px) {
+  .featureCard {
+    width: 180px;
+  }
+}

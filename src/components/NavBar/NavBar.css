@@ -1,0 +1,135 @@
+/* General Resets */
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.navbar {
+  width: 90%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 80px;
+}
+
+/* Nav Container */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: black;
+  flex-grow: 3;
+}
+
+/* Menu Container */
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 2;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav-menu a {
+  color: gray;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer !important;
+  padding-bottom: 4px;
+  transition: border-bottom 0.2s ease;
+}
+.nav-menu a:hover {
+  color: #5442e6;
+  cursor: pointer;
+  border-bottom: 1px solid blue;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Menu Toggle Button */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Animation for Mobile Menu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px 30px;
+  }
+
+  .mobile-menu {
+    display: block;
+    z-index: 1100;
+  }
+
+  .menu-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.3s ease-in-out;
+    padding: 10px;
+  }
+
+  .menu-container.open {
+    display: flex;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+}
