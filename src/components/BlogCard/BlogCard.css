@@ -1,8 +1,7 @@
 .blog-card {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  width: 350px;
+  width: 280px;
   height: 100%;
   overflow: hidden;
   cursor: pointer;
@@ -17,6 +16,7 @@
 }
 
 .blog-card.minione {
+  width: 200px;
   flex: 1;
   border: 0.5px solid #bebebe;
   border-radius: 16px;
@@ -82,13 +82,9 @@
   .blogCard-content h2 {
     font-size: 2rem;
   }
- 
 }
 
 @media screen and (max-width: 800px) {
-  .blog-card {
-    width: 280px;
-  }
   .blogCard-content h2 {
     font-size: 1.25rem;
   }
